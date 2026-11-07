@@ -1,2 +1,25 @@
 # kansk-kursovaya-humanizer
-Skill for generating course projects (KP/RPZ) according to Kansk Technological College standard with mandatory text proofreading via humanizer-ru (academic)
+
+Skill для Grok: генерация курсового проекта (КП/РПЗ) по стандарту Канского технологического колледжа с обязательной вычиткой текста по humanizer-ru (academic).
+
+## Особенности
+
+- Работает строго по частям, отдаёт только .docx
+- Текст без AI-slop и лишней воды при сохранении академического регистра
+- Использует детерминированный сканер `scripts/scan.py` для оценки чистоты текста
+
+## Триггеры
+
+- сделай курсовую
+- сгенерируй КП
+- напиши по стандарту Канска
+- очеловечь курсовую
+- чистая курсовая
+- humanizer курсовая
+
+## Структура
+
+- `SKILL.md` — основное описание скилла
+- `scripts/scan.py` — сканер качества текста
+- `scripts/humanizer_metrics/` — модули метрик
+- `references/` — справочные материалы
